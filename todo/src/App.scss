@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+}
+
+.task {
+  background: white;
+  color: black;
+  cursor: pointer;
+  transition: background 300ms !important;
+  &:hover {
+    background: #f1f3f8;
+  }
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &__text {
+    margin-right: 25px;
+  }
+  &__check--hide {
+    visibility: hidden;
+  }
+  &__check--show {
+    visibility: visible;
+    color: teal;
+  }
+}
